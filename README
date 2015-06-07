@@ -1,0 +1,33 @@
+See edoc for module console_chart.
+See example of usage in priv/cnsl_cpu_util.escript - run make, cd ebin/ and ./cnsl_cpu_util.escript - this will show cpu utilization in time:
+=================================================================================
+  100                                                                                                      
+                                                                                                           
+                                                                                                           
+                                                             /|                                            
+                                       _                    | |                                            
+                                      / |                   | |                                            
+   75                           /|   |   \                  | |                                            
+                               | |   |    |                /  |                                            
+                              /  |   |    |               |   |                                            
+                             |   |   |    |              _|   |    /|                                      
+                             |   |   |    |             /     |   |  \                                     
+            /\_              |   |   |    |            |      |   |   \/|  /|                /|            
+   50      |   |           /\|   |   |    |            |      |   |     | | |               | |            
+          /    |          |      |  /     |            |      |   |     | | |               | |            
+         |     |          |      | |      |            |       \_/      | | |               | |            
+         |     |          |      | |       \           |                 \| |      /\       |  \        /  
+        _|     |          |      | |        \          |                     \    |  |      |   |      |   
+       /       |         /       | |         |         |                      |   |   \____ |    \   /\|   
+      |         \_/|    |        | |         |        /                        \_/         \|     \_|      
+   25\|             \/\/         | |          \      |                                                     
+                                  \|           |  /| |                                                     
+                                                \| | |                                                     
+                                                   | |                                                     
+                                                    \|                                                     
+                                                                                                           
+    0                                                                                                      
+
+Other variants for this script:
+./cnsl_cpu_util.escript cpu 1000 - display cpu usage with update every 1000 ms (defaults)
+./cnsl_cpu_util.escript mem 2000 - display free RAM with update every 2 sec.
